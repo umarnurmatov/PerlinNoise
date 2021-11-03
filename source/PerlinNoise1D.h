@@ -1,17 +1,10 @@
 #pragma once
-
-#ifdef PERLINNOISE1D_EXPORTS
-#define PERLINNOISE1D_API __declspec(dllexport)
-#else
-#define PERLINNOISE1D_API __declspec(dllimport)
-#endif
-
 #include <vector>
 
 class PerlinNoise1D
 {
 	int size; // Number of all generates points
-	
+
 	// Generates random line coeffs
 	void generateCoeff();
 	std::vector<std::vector<float>> coeff; // Vector of random line coefficients
@@ -26,7 +19,7 @@ class PerlinNoise1D
 	// Amplitude and curvature of final curve
 	float amplitudeFactor = 7500.f, stepFactor = 3.f;
 	// Number of noise octaves
-	int octaves = 3; 
+	int octaves = 3;
 
 	std::vector<float> curve; // Vector of curve points
 

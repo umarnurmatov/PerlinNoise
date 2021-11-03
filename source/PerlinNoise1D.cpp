@@ -1,4 +1,3 @@
-#include "pch.h"
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
